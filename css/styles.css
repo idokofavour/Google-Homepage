@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+:root {
+    /* || BORDER */
+    --BORDER-RADIUS: 30px;
+    --OUTLINE: none;
+
+    /* || COLOR */
+    --BG-COLOR: whitesmoke;
+    --COLOR: #fff;
+
+    /* || TEXT DECORATION */
+    --CURSOR: pointer;
+
+    /* || FONTS */
+    --FONT-SIZE: 5rem;
+    --FONT-WEIGHT: 500;
+
+    /* || SPACING */
+    --BOTTOM: 10px;   
+    --MARGIN-TOP: 10px; 
+    --MARGIN: 20px;
+    --PADDING-LEFT: 40px;
+    --PADDING: 10px;
+}
+
+ body {
+    color: #202124;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    padding: 20px;
+} 
+
+.gmail {
+    cursor: var(--CURSOR);
+    margin-right: 10px;
+}
+
+.image {
+    cursor: var(--CURSOR);
+    margin-right: 10px;
+}
+
+.figure,
+.second-figure {
+    margin: 0 10px;
+}
+
+.app-icon {
+    cursor: var(--CURSOR);
+    position: relative;
+} 
+
+.figure .tooltip {
+    position: absolute;
+    background-color:  rgb(90, 90, 90);
+    color: var(--COLOR);
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: 90vh;
+    right: 6vh;
+    opacity: 0;
+    transition: opacity 0.15;
+    pointer-events: none;
+}
+
+.figure:hover .tooltip,
+.second-figure:hover .second-tooltip {
+    opacity: 1;
+}
+
+.profile-icon {
+ border-radius: 15px;
+ margin-top: -4px;
+}
+
+.second-figure .second-tooltip {
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    color: #c9c6c6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: 86vh;
+    right: 4vh;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.second-tooltip :nth-child(1) {
+    color: var(--COLOR);
+}
+
+.gmail:hover,
+.image:hover {
+    text-decoration: underline;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 11vh;
+}
+
+h1 {
+    letter-spacing: -12px;
+    font-size: var(--FONT-SIZE);
+    font-weight: var(--FONT-WEIGHT); 
+    
+}
+.item1 {color: rgb(7, 134, 219);}
+
+.item2 {color: rgb(241, 42, 7);}
+
+.item3 {color: rgb(250, 183, 58);}
+
+.item4 {color: rgb(7, 134, 219);}
+
+.item5 {color: rgb(3, 165, 3);}
+
+.item6 {color: rgb(241, 42, 7);}
+
+input {
+    outline: none;
+    margin-top: var(--MARGIN-TOP);
+    border-radius: var(--BORDER-RADIUS);
+    border: 1px solid rgb(224, 224, 224);
+    height: 45px;
+    padding-left: var(--PADDING-LEFT);
+    padding-right: 80px;
+    width: 80vh;
+}
+
+input:hover {
+    box-shadow: 2px 2px 2px #ddd;
+} 
+
+section {
+    position: relative;
+    height: fit-content;
+}
+
+.search-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+}
+
+.search-voice {
+    position: absolute;
+    bottom: 15px;
+    left: 70vh;
+    cursor: var(--CURSOR);
+}
+
+.search-img {
+    position: absolute;    position: absolute;
+    bottom: 15px;
+    left: 75vh;
+    cursor: var(--CURSOR);
+}
+
+.figures .tooltips {
+    position: absolute;
+    background-color: rgb(90, 90, 90);
+    color: #c9c6c6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: 86vh;
+    right: 4vh;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.figures:hover .tooltips {
+    opacity: 1;
+} 
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin: var(--MARGIN) var(--MARGIN-TOP);
+    padding: var(--PADDING);
+    border: 1px solid #f8f8f8;
+}
+
+button:hover {
+    background-color: #faf7f7;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px #d8d3d3;
+    cursor: var(--CURSOR);       
+}
+
+button:focus {
+border: 1px solid rgb(7, 134, 219);
+}
+
+article {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph2 {
+    color: rgb(43, 43, 167);
+    cursor: var(--CURSOR);
+    padding: var(--PADDING);
+}
+
+.paragraph2:hover{
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: grey;
+}
+
+.panel {
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    white-space: nowrap;
+    list-style: none;
+    align-items: center;
+}
+
+ul p {
+    text-align: center;
+     padding: 13px 12px;  
+}
+
+ul p:hover {
+    text-decoration: underline;
+    cursor: var(--CURSOR);
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.middle {
+    justify-content: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+@media(max-width: 665px) {
+    input {width: 90vw;} 
+
+    .search-voice {left: 77vw;}
+    
+    .search-img {left: 84vw;}
+
+    footer {margin-top: 21vh;}
+
+    .container {flex-direction: column;}
+
+    ul p {
+        text-align: center;
+        padding-bottom: 11px;  
+    }
+
+    .left {
+        justify-content: center;
+        order: 1;
+    }
+
+    .middle {justify-content: center;}
+    
+    .right {
+        justify-content: center;
+        order: 2;
+        margin-bottom: -2vh;
+    }    
+}   
+
+@media(min-width: 665px) {
+    footer {margin-top: 27vh;}
+
+    .container {
+        justify-content: space-evenly;
+        padding: 4vh;    
+    }
+
+    ul {
+        padding-top: var(--PADDING);
+        margin-bottom: -3vh;
+    }
+
+    .middle {
+        position: absolute;
+        bottom: 10vh;
+        margin-left: 10vh;   
+    }
+}
+
+@media(min-width: 1200px) {
+    footer {margin-top: 34vh;}
+     .container {
+        margin-top: -10px;
+        padding: 0 0 20px 0;
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    ul {
+        display: flex;
+        white-space: nowrap;
+    }
+
+    .panel {
+        margin-left: 10px;
+    }
+
+    .left {
+        margin-left: 15px;
+    }
+
+    .right {
+        margin-right: 15px;
+    }
+
+    .middle {
+        justify-content: center;
+        position: static;
+        margin-right: 30vh;
+    }    
+}
